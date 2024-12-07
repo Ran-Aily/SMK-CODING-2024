@@ -1,0 +1,186 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    animation: fadeIn 1s ease-out;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-out;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.table-section {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+}
+
+.table-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 40px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+}
+
+table{
+    width: 88%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    animation: fadeIn 2s ease-out;
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th{
+    background-color: #3498db;
+    color: #fff;
+}
+
+.name {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: slideIn 2s ease-out;
+}
+
+.description {
+    font-size: 1.2em;
+    animation: slideIn 2s ease-out 0.5s;
+}
+
+/* About Section */
+.about {
+    background: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #3498db;
+    color: #fff;
+    padding: 30px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item h3 {
+    font-size: 1.5em;
+}
+
+.portfolio-item p {
+    font-size: 1.1em;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
